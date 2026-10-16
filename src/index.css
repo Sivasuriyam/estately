@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@theme{--font-display:"Bricolage Grotesque",sans-serif;--font-sans:"DM Sans",sans-serif;
+--color-ink:#10243e;--color-mist:#f3f6f9;--color-lagoon:#0e9aa7;--color-lagoon-d:#0b7a85;--color-marigold:#f2a900}
+body{@apply bg-mist text-ink font-sans antialiased}
+h1,h2,h3{@apply font-display}
+@layer components{
+.btn{@apply inline-flex items-center justify-center gap-2 rounded-lg bg-lagoon px-4 py-2.5 font-medium text-white transition hover:bg-lagoon-d focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lagoon}
+.btn-ghost{@apply inline-flex items-center justify-center gap-2 rounded-lg border border-ink/20 px-4 py-2.5 font-medium transition hover:bg-ink/5}
+.input{@apply w-full rounded-lg border border-ink/20 bg-white px-3 py-2.5 outline-none focus:border-lagoon focus:ring-2 focus:ring-lagoon/30}
+.wrap{@apply mx-auto w-full max-w-7xl px-4 sm:px-6}}
